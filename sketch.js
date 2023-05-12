@@ -33,7 +33,7 @@ function setup() {
  endGroup();
   
   //foresta:
-  var lato = 85;
+  var lato = 95;
   var numeroAlberi = 190;
   for  (var i=0; i<numeroAlberi; i++)
     {
@@ -46,7 +46,7 @@ function setup() {
   
   align(BOTTOM);
   diffuse("#3B8800");
-  box(0, 0.8, 0, lato+20, 1, lato+20);
+  box(0, 0.8, 0, lato+60, 1, lato+60);
   
   pushFX(BLOOM, 0.25);  
   
