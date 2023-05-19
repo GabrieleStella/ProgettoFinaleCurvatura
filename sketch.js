@@ -9,6 +9,7 @@
 
 function preload() {
   treeModel = loadAsset("albero.glb"); //add
+  rockmodel = loadasset("stylized_rock.glb");
 }
 
 function setup() {
@@ -42,8 +43,16 @@ function setup() {
       var z = random(-lato/2, lato/2);
       var nuovoAlbero = clone(albero2, x, y, z);
       nuovoAlbero.setScale(random(1, 1.8));
+
+      
+
     }
   
+     var rock = clone(rockmodel, x+1, y, z+1);
+      rock.setscale(1);
+ 
+
+
   align(BOTTOM);
   diffuse("#3B8800");
   box(0, 0.8, 0, lato+60, 1, lato+60);
