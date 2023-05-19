@@ -33,7 +33,7 @@ function setup() {
  endGroup();
   
   //foresta:
-  var lato = 95;
+  var lato = 115;
   var numeroAlberi = 190;
   for  (var i=0; i<numeroAlberi; i++)
     {
