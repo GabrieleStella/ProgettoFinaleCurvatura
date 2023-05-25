@@ -9,9 +9,9 @@
 
 function preload() {
   treeModel = loadAsset("albero.glb"); //add
-  rockmodel = loadasset("prova.glb");
+  rockModel = loadasset("rockandplants.glb");
 }
-
+ 
 function setup() {
   createCanvas3D(windowWidth, windowHeight)
 
@@ -37,24 +37,27 @@ function setup() {
   var lato = 155;
   var numeroAlberi = 210;
   for  (var i=0; i<numeroAlberi; i++)
-    {
+   {
       var x = random(-lato/2, lato/2);
       var y = 0;
       var z = random(-lato/2, lato/2);
       var nuovoAlbero = clone(albero2, x, y, z);
       nuovoAlbero.setScale(random(1, 1.8));
-    }
+   }
  
-    /** 
-    for  (var i=0; i<20; i++)
-    { 
-      var x = random(-lato/2, lato/2);
-      var y = 0;
-      var z = random(-lato/2, lato/2);
-      var roccia = clone(rockmodel, x, y, z);
-      roccia.setScale(random(1, 1.1));
+
+ 
+  for  (var i1=0; i1<25; i1++)
+    {
+      var x1 = random(-lato/2, lato/2);
+      var y1 = 0;
+      var z1 = random(-lato/2, lato/2);
+      var Roccia = clone(rockmodel, x1, y1, z1);
+      Roccia.setScale(random(1, 1.1));
     }
-  **/
+    
+    
+      
 
     //var roccia = clone(rockmodel, x+1, y, z+1);
     //roccia.setscale(1);
