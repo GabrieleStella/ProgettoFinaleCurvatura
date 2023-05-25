@@ -9,7 +9,7 @@
 
 function preload() {
   treeModel = loadAsset("albero.glb"); //add
-  rockmodel = loadasset("stylized_rock.glb");
+  rockmodel = loadasset("prova.glb");
 }
 
 function setup() {
@@ -34,8 +34,8 @@ function setup() {
  endGroup();
   
   //foresta:
-  var lato = 115;
-  var numeroAlberi = 190;
+  var lato = 155;
+  var numeroAlberi = 210;
   for  (var i=0; i<numeroAlberi; i++)
     {
       var x = random(-lato/2, lato/2);
@@ -43,21 +43,28 @@ function setup() {
       var z = random(-lato/2, lato/2);
       var nuovoAlbero = clone(albero2, x, y, z);
       nuovoAlbero.setScale(random(1, 1.8));
-
-      
-
     }
-  
-     var rock = clone(rockmodel, x+1, y, z+1);
-      rock.setscale(1);
  
+    /** 
+    for  (var i=0; i<20; i++)
+    { 
+      var x = random(-lato/2, lato/2);
+      var y = 0;
+      var z = random(-lato/2, lato/2);
+      var roccia = clone(rockmodel, x, y, z);
+      roccia.setScale(random(1, 1.1));
+    }
+  **/
+
+    //var roccia = clone(rockmodel, x+1, y, z+1);
+    //roccia.setscale(1);
 
 
   align(BOTTOM);
   diffuse("#3B8800");
-  box(0, 0.8, 0, lato+60, 1, lato+60);
+  box(0, 0.8, 0, lato+30, 1, lato+30);
   
-  pushFX(BLOOM, 0.25);  
+  pushFX(BLOOM, 0.22);  
   
 }
 
