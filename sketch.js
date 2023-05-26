@@ -57,12 +57,11 @@ function setup() {
     }
     
     
-      
-
     //var roccia = clone(rockmodel, x+1, y, z+1);
     //roccia.setscale(1);
 
 
+    
   align(BOTTOM);
   diffuse("#3B8800");
   box(0, 0.8, 0, lato+30, 1, lato+30);
