@@ -45,7 +45,7 @@ function setup() {
       nuovoAlbero.setScale(random(1, 1.8));
    }
  
- 
+     /*
  
   for  (var i1=0; i1<25; i1++)
     {
@@ -56,12 +56,13 @@ function setup() {
       Roccia.setScale(random(1, 1.1));
     }
     
-    
-    //var roccia = clone(rockmodel, x+1, y, z+1);
-    //roccia.setscale(1);
+    */
+   
+   //var roccia = clone(rockModel, 10, 10, 10);
+   //roccia.setScale(1);
 
 
-    
+
   align(BOTTOM);
   diffuse("#3B8800");
   box(0, 0.8, 0, lato+30, 1, lato+30);
